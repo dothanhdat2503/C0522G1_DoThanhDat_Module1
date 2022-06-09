@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 7: Giải phương trình bậc 2.-->
+<script>
+    let numberA = prompt('Nhập A');
+    let numberB = prompt('Nhập B');
+    let numberC = prompt('Nhập C');
+    let denta = (numberB * numberA) - (4 * numberA * numberC)
+    if (numberA === 0) {
+        alert("Phương trình bật 1");
+    } else {
+        if (denta < 0) {
+            alert("phương trình vô nghiệm");
+        } else {
+            if (dt === 0) {
+                let x = -numberB / 2 * numberA;
+                alert("phuong trinh co nghiem kep la: " + x);
+            } else {
+                let x1 = ((-numberB + sprt(denta)) / 2 * numberA)
+                let x2 = ((-numberB - sprt(denta)) / 2 * numberA)
+                alert("phuong trinh co 2 nghiem phan biet x1= " + x1 && "x2 =" + x2)
+            }
+        }
+    }
+</script>
+</body>
+</html>
