@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let TienGuiBanDau =parseFloat(prompt("Nhập số tiền gửi ban đầu:"));
+    let ThangGui =parseFloat(prompt("NHập số tháng cần gửi"));
+    if (ThangGui<=6){
+        let heSoLai = 0.4/100;
+        let tienLai = TienGuiBanDau *ThangGui * heSoLai;
+        alert("so tien lai la: "+tienLai);
+    } else if (ThangGui<=12) {
+        let heSoLai = 0.5/100;
+        let tienLai = TienGuiBanDau * ThangGui * heSoLai;
+        alert("so tien lai la: "+tienLai);
+    } else {
+        let heSoLai = 0.6/100;
+        let tienLai = TienGuiBanDau * ThangGui * heSoLai;
+        alert("so tien lai la: "+tienLai);
+    }
+</script>
+</body>
+</html>
