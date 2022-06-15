@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let so1=0;
+let so2=1;
+let so3;
+let str=so1+""+so2;
+    for (let i=1;i<=20;i++) {
+        so3 = so1 + so2;
+        so1 = so2;
+        so2 = so3;
+        document.write(so3 + '');
+        if (so3 % 5 === 0) {
+            alert(so3)
+            break;
+        }
+    }
+</script>
+</body>
+</html>
