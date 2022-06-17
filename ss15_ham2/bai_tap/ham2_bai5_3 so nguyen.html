@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numberA=parseInt(prompt("Nhập số đầu tiên"));
+    let numberB=parseInt(prompt("Nhập số thứ hai"));
+    let numberC=parseInt(prompt("Nhập số thứ ba"));
+    max(numberA,numberB,numberC);
+    function max(numBerA,numBerB,numBerC) {
+        if (numberA<numberB && numberA<numberC){
+            alert("Số đầu tiên là số bé nhất");
+        }else if (numberB<numberA && numberB<numberC){
+            alert("Số thứ hai là số bé nhất");
+        }else {
+            alert("Số thứ ba là số bé nhất")
+        }
+    }
+</script>
+</body>
+</html>
+<!--Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.-->

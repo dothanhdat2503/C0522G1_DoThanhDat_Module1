@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="show"></p>
+<script>
+    //10k
+    let number=parseInt(prompt("Hãy nhập 1 số"));
+    function caculate(numBer) {
+        let caculate = 1;
+        for (i = 1; i <= number; i++) {
+            caculate = caculate * i;
+        }
+        return caculate
+    }
+    document.getElementById('show').innerHTML=caculate(numBer);
+</script>
+</body>
+</html>
+<!--Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.-->

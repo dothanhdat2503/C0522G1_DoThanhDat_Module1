@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="show"></p>
+<script>
+    let numBer=parseInt(prompt("Hãy nhập 1 số"));
+    function caCulate(number) {
+        let caCulate = 1;
+        for (i = 1; i <= number; i++) {
+            caCulate = caCulate * i;
+        }
+        return caCulate
+    }
+    document.getElementById('show').innerHTML=caCulate(numBer);
+</script>
+</body>
+</html>
+<!--Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.-->

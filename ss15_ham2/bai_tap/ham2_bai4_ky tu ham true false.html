@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="show"></p>
+<script>
+    //10k
+    let number=parseInt(prompt("Nhập 1 số"));
+    function calculate() {
+        if (number <= 1 || number >= 1) {
+            alert(true);
+        } else {
+            alert(false);
+        }
+        return calculate();
+    }document.getElementById('show').innerHTML=calculate(numBer);
+</script>
+</body>
+</html>
+<!--Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.
+Nếu là ký tự số hàm trả về true, ngược lại trả về false.-->

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<p id="show"></p>
+<script>
+    let radius=parseInt(prompt("Hãy nhập bán kính"));
+    //5k
+    function calculate(radius) {
+        let aRea= radius*radius*Math.PI;
+        let peRimeter=radius*2*Math.PI;
+        return "Diện tích hình tròn là: "+aRea+"<br>+Chu vi hình tròn là: "+peRimeter;
+    }
+    document.getElementById('show').innerHTML=calculate(radius)
+</script>
+</body>
+</html>
+<!--Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được-->
