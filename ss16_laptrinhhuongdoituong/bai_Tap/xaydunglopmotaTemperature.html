@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+ class Temperature{
+     constructor (celsius){
+        this.celsius=celsius;
+     }
+     getFahrenheit(){
+         return 9/5 * this.celsius + 32;
+     }
+     getKelvins()
+     {
+         return this.celsius + 273.15;
+     }
+ }
+ let temperature=new Temperature(25);
+ let fahrenheit=temperature.getFahrenheit();
+ let kelvins=temperature.getKelvins();
+ alert("Dựa vào độ C là 25, Ta có độ F là: "+fahrenheit+" và độ Kelvins là: "+kelvins);
+</script>
 </body>
 </html>
